@@ -30,9 +30,9 @@ class App extends React.Component {
     return (
       <Container>
         <Header />
-        <Content padder>
+        <Content padder contentContainerStyle={styles.content}>
           <Card>
-            <CardItem header bordered>
+            <CardItem header bordered >
               <Text style={styles.textCenter}>Iniciar sesión</Text>
             </CardItem>
             <CardItem bordered>
@@ -60,6 +60,10 @@ const styles = StyleSheet.create({
   textCenter: {
     textAlign: 'center',
     width: '100%',
+  },
+  content: {
+    flex: 1,
+    justifyContent: 'center'
   }
 });
 
