@@ -33,7 +33,7 @@ class App extends React.Component {
         <Content padder>
           <Card>
             <CardItem header bordered>
-              <Text style={styles.textCenter}>NativeBase</Text>
+              <Text style={styles.textCenter}>Iniciar sesión</Text>
             </CardItem>
             <CardItem bordered>
               <Body>
@@ -58,7 +58,8 @@ class App extends React.Component {
 
 const styles = StyleSheet.create({
   textCenter: {
-    flex: 1,
+    textAlign: 'center',
+    width: '100%',
   }
 });
 
