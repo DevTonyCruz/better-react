@@ -47,7 +47,7 @@ class App extends React.Component {
               </Body>
             </CardItem>
             <CardItem footer bordered>
-              <Text>GeekyAnts</Text>
+            <Button primary style={styles.btnLogin}><Text> Entrar </Text></Button>
             </CardItem>
           </Card>
         </Content>
@@ -63,6 +63,10 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
+    justifyContent: 'center'
+  },
+  btnLogin: {
+    width: '100%',
     justifyContent: 'center'
   }
 });
