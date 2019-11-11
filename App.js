@@ -1,7 +1,7 @@
 import React from 'react';
 import { AppLoading, Constants } from 'expo';
 import { StyleSheet, Platform } from 'react-native';
-import { Container, Header, Content, Button,Body, Text, Card, CardItem } from 'native-base';
+import { Container, Header, Content, Button, Body, Text, Card, CardItem, Item, Icon, Input } from 'native-base';
 import * as Font from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
 
@@ -37,17 +37,18 @@ class App extends React.Component {
             </CardItem>
             <CardItem bordered>
               <Body>
-                <Text>
-                  NativeBase is a free and open source framework that enable
-                  developers to build
-                  high-quality mobile apps using React Native iOS and Android
-                  apps
-                  with a fusion of ES6.
-                </Text>
+                <Item inlineLabel>
+                  <Icon active name='home'></Icon>
+                  <Input placeholder='Nombre de usuario' />
+                </Item>
+                <Item inlineLabel last>
+                  <Icon active name='lock'></Icon>
+                  <Input placeholder='Contraseña de usuario' />
+                </Item>
               </Body>
             </CardItem>
             <CardItem footer bordered>
-            <Button primary style={styles.btnLogin}><Text> Entrar </Text></Button>
+              <Button primary style={styles.btnLogin}><Text> Entrar </Text></Button>
             </CardItem>
           </Card>
         </Content>
